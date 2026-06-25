@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自治大戦記</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="home">
+
+    <header class="top-bar">
+      <div class="logo-area">
+        <div class="crest">菊</div>
+        <div>
+          <h1>自治大戦記</h1>
+          <p>JICHI TAISENKI</p>
+        </div>
+      </div>
+
+      <div class="resource-area">
+        <div class="resource">財源 <strong>5,000</strong></div>
+        <div class="resource">スタミナ <strong>20/20</strong></div>
+      </div>
+    </header>
+
+    <main class="main-view">
+
+      <section class="city-panel">
+        <h2>都市情報</h2>
+        <p>都市Lv. <span>1</span></p>
+        <p>財源 <span>5,000</span></p>
+        <p>スタミナ <span>20/20</span></p>
+        <p>議会影響力 <span>0%</span></p>
+        <p>支持率 <span>50%</span></p>
+        <p>再編警戒 <span class="safe">低</span></p>
+      </section>
+
+      <section class="center-panel">
+        <div class="title-box">
+          <h2>自治大戦記</h2>
+          <p>大和県 日ノ本市</p>
+          <div class="mayor">市長就任中</div>
+          <h3>ミキト</h3>
+        </div>
+
+        <div class="secretary-card">
+          <div>
+            <small>秘書</small>
+            <h2>菱尾 和</h2>
+            <p>HISHIO NAGOMI</p>
+            <p>本日も市政の発展のため、共にまいりましょう。</p>
+          </div>
+          <img src="nagomi1.jpg" class="secretary-image">
+      </section>
+
+      <section class="news-panel">
+        <h2>お知らせ</h2>
+        <p>◇ 臨時会の招聘が可能です <span>05/23</span></p>
+        <p>◇ 商店に新商品が入荷しました <span>05/22</span></p>
+        <p>◇ デイリーミッション更新 <span>05/22</span></p>
+        <p>◇ 自治体再編の動きが活発化中 <span>05/21</span></p>
+        <button>もっと見る</button>
+      </section>
+
+    </main>
+
+    <nav class="menu">
+     <button onclick="location.href='jinji.html'">
+    <span>👥</span>
+    人事
+    <small>編成・育成</small>
+</button>
+
+     <button onclick="location.href='syouhei.html'">
+    <span>🤝</span>
+    招聘
+    <small>自治体を招聘</small>
+</button>
+
+     <button class="active" onclick="location.href='gikai.html'">
+    <span>🏛️</span>
+    議会
+    <small>定例会・臨時会</small>
+</button>
+
+      <button>
+        <span>🛒</span>
+        商店
+        <small>購入・交換</small>
+      </button>
+
+      <button>
+        <span>⚙️</span>
+        設定
+        <small>各種設定</small>
+      </button>
+    </nav>
+
+    <footer>
+      自治の未来を、その手で切り拓け
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

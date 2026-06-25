@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>招聘 - 自治大戦記</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="home">
+
+  <header class="top-bar">
+    <div class="logo-area">
+      <h1>招聘</h1>
+    </div>
+
+    <div class="resource-area">
+      <div class="resource">財源 <strong>5,000</strong></div>
+    </div>
+  </header>
+
+  <div class="gacha-banner">
+    <div class="pickup-tag">LR PICK UP</div>
+
+    <div class="banner-nav">
+      <button onclick="prevCity()">◀</button>
+
+      <div class="city-display">
+        <img id="cityImage" class="pickup-image" src="shibuya.png" alt="渋谷">
+        <h2 id="cityName">渋谷</h2>
+        <p id="cityCatch">LR自治体</p>
+      </div>
+
+      <button onclick="nextCity()">▶</button>
+    </div>
+  </div>
+
+  <div class="gacha-buttons">
+
+    <button class="gacha-single" onclick="location.href='gacha_intro.html?count=1'">
+      1回招聘
+    </button>
+
+    <button class="gacha-ten" onclick="location.href='gacha_intro.html?count=10'">
+      10回招聘
+    </button>
+
+  </div>
+
+  <div class="back-area">
+    <button onclick="location.href='home.html'">
+      ホームへ戻る
+    </button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招聘演出 - 自治大戦記</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="reveal-screen" onclick="nextReveal()">
+
+    <img class="reveal-bg" id="revealBg" src="effect_fire.png" alt="属性背景">
+
+    <div class="reveal-effect" id="revealRarity">LR</div>
+
+    <img class="reveal-character" id="revealImage" src="shibuya.png" alt="渋谷">
+
+    <div class="reveal-info">
+        <div class="reveal-name" id="revealName">渋谷</div>
+        <div class="reveal-tap">TAP</div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    startReveal();
+</script>
+
+</body>
+</html>
