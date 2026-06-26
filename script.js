@@ -431,9 +431,40 @@ function generateGacha(){
             "</div>" +
             "<div class='result-name'>" + city + "</div>";
 
-        card.onclick = function(){
+        card.setAttribute("role", "button");
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("aria-label", city + "の仮表示を開く");
+
+        const openReveal = function(){
+            if(card.dataset.opening === "true") return;
+            card.dataset.opening = "true";
             location.href = "reveal.html?count=" + results.length + "&index=" + i + "&from=result";
         };
+
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        card.addEventListener("click", openReveal);
+        card.addEventListener("touchstart", function(e){
+            if(e.touches.length !== 1) return;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        }, { passive:true });
+        card.addEventListener("touchend", function(e){
+            if(e.changedTouches.length !== 1) return;
+            const touch = e.changedTouches[0];
+            const moveX = Math.abs(touch.clientX - touchStartX);
+            const moveY = Math.abs(touch.clientY - touchStartY);
+            if(moveX > 12 || moveY > 12) return;
+            e.preventDefault();
+            openReveal();
+        }, { passive:false });
+        card.addEventListener("keydown", function(e){
+            if(e.key === "Enter" || e.key === " "){
+                e.preventDefault();
+                openReveal();
+            }
+        });
 
         grid.appendChild(card);
     }

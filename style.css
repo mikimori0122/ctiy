@@ -914,6 +914,9 @@ body{
     display:block;
     text-align:center;
     cursor:pointer;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+    user-select:none;
     transition:transform .18s ease, filter .18s ease;
 }
 
