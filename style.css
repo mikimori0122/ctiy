@@ -2114,15 +2114,16 @@ body.page-hide{
     box-shadow:0 0 22px rgba(0,0,0,.65);
 }.husou-area{
     position:absolute !important;
-    right:10px !important;
-    bottom:10px !important;
+    right:24px !important;
+    bottom:24px !important;
     z-index:8 !important;
 }
 
 .husou-home{
-    height:900px !important;
+    height:min(58vh, 520px) !important;
     width:auto !important;
-    max-width:none !important;
+    max-width:min(46vw, 520px) !important;
+    max-height:520px !important;
 }
 
 .husou-message{
@@ -2135,7 +2136,7 @@ body.page-hide{
 }.husou-message{
     position:absolute !important;
     left:50% !important;
-    bottom:230px !important;
+    bottom:120px !important;
     transform:translateX(-50%) !important;
 
     width:360px !important;
@@ -2202,15 +2203,15 @@ body.page-hide{
         right:auto !important;
         bottom:auto !important;
         margin:8px auto 14px;
-        min-height:340px;
+        min-height:280px;
         justify-content:flex-end;
     }
 
     .husou-home{
-        height:330px !important;
+        height:260px !important;
         max-width:100% !important;
         width:auto !important;
-        max-height:none !important;
+        max-height:260px !important;
     }
 
     .husou-message{
@@ -2403,5 +2404,107 @@ body.page-hide{
 
     .formation-detail-info h2{
         font-size:28px !important;
+    }
+}
+
+/* Final HOME positioning overrides */
+.cw-home{
+    min-height:100dvh;
+    padding:20px 20px 230px !important;
+    overflow:hidden !important;
+}
+
+.cw-home .cw-home-main{
+    display:block !important;
+    min-height:0 !important;
+    margin:0 !important;
+}
+
+.cw-home .notice-panel{
+    position:fixed !important;
+    left:24px !important;
+    bottom:220px !important;
+    width:min(320px, calc(100vw - 48px)) !important;
+    z-index:24 !important;
+}
+
+.cw-home .husou-area{
+    position:fixed !important;
+    right:clamp(36px, 7vw, 96px) !important;
+    bottom:-34px !important;
+    display:block !important;
+    width:clamp(340px, 34vw, 540px) !important;
+    height:clamp(560px, 74vh, 740px) !important;
+    min-height:0 !important;
+    margin:0 !important;
+    z-index:18 !important;
+    pointer-events:none !important;
+}
+
+.cw-home .husou-home{
+    position:absolute !important;
+    right:0 !important;
+    bottom:0 !important;
+    height:100% !important;
+    width:auto !important;
+    max-width:100% !important;
+    max-height:none !important;
+    object-fit:contain !important;
+}
+
+.cw-home .husou-message{
+    position:fixed !important;
+    left:auto !important;
+    right:16px !important;
+    bottom:232px !important;
+    transform:none !important;
+    width:min(520px, calc(100vw - 48px)) !important;
+    margin:0 !important;
+    z-index:65 !important;
+}
+
+.cw-home .menu{
+    position:fixed !important;
+    left:16px !important;
+    right:16px !important;
+    bottom:16px !important;
+    z-index:60 !important;
+}
+
+@media (max-width:760px){
+    .cw-home{
+        padding:10px 10px 118px !important;
+        overflow:hidden !important;
+    }
+
+    .cw-home .notice-panel{
+        left:10px !important;
+        right:10px !important;
+        bottom:392px !important;
+        width:auto !important;
+        max-height:150px !important;
+        overflow:auto !important;
+    }
+
+    .cw-home .husou-area{
+        right:12px !important;
+        bottom:-20px !important;
+        width:230px !important;
+        height:330px !important;
+    }
+
+    .cw-home .husou-message{
+        left:10px !important;
+        right:10px !important;
+        bottom:104px !important;
+        width:auto !important;
+        font-size:15px !important;
+        z-index:65 !important;
+    }
+
+    .cw-home .menu{
+        left:8px !important;
+        right:8px !important;
+        bottom:8px !important;
     }
 }
