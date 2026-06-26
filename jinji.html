@@ -26,6 +26,11 @@
     <section class="jinji-view active" id="jinjiListView">
       <div class="jinji-section-title">
         <h2>協力自治体一覧</h2>
+        <select class="jinji-sort" id="jinjiSort" onchange="renderJinjiList()">
+          <option value="rarity">レアリティ順</option>
+          <option value="name">名前順</option>
+          <option value="attribute">属性順</option>
+        </select>
       </div>
       <div class="jinji-grid" id="jinjiRosterGrid"></div>
     </section>
@@ -34,9 +39,6 @@
       <div class="formation-detail" id="formationDetail"></div>
 
       <div class="formation-pool">
-        <div class="jinji-section-title">
-          <h2>協力自治体から選択</h2>
-        </div>
         <div class="formation-pool-grid" id="formationPoolGrid"></div>
       </div>
 
@@ -45,8 +47,8 @@
 
     <section class="jinji-view" id="jinjiFriendshipView">
       <div class="jinji-section-title">
-        <h2>親善</h2>
-        <p>重複した自治体を親善に使い、友好ランクを上げます</p>
+        <h2>友好</h2>
+        <p>重複した自治体を使い、友好ランクを上げます。</p>
       </div>
       <div class="friendship-list" id="friendshipList"></div>
     </section>
@@ -60,7 +62,7 @@
   <nav class="jinji-tabs">
     <button class="active" onclick="switchJinjiTab('list')">一覧</button>
     <button onclick="switchJinjiTab('formation')">編成</button>
-    <button onclick="switchJinjiTab('friendship')">親善</button>
+    <button onclick="switchJinjiTab('friendship')">友好</button>
     <button onclick="switchJinjiTab('specialty')">特産品</button>
   </nav>
 
