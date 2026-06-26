@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招聘結果 - 自治大戦記</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="result-bg"></div>
+
+<div class="home">
+
+    <header class="top-bar">
+        <div class="logo-area">
+            <h1>招聘結果</h1>
+        </div>
+    </header>
+
+    <div class="result-grid" id="resultGrid"></div>
+
+    <div class="back-area">
+        <button onclick="location.href='syouhei.html'">もう一度招聘へ</button>
+        <button onclick="location.href='home.html'">ホームへ戻る</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+generateGacha();
+</script>
+
+</body>
+</html>

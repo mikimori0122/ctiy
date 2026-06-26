@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>招聘 - 自治大戦記</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="home">
+
+  <header class="top-bar">
+    <div class="logo-area">
+      <h1>招聘</h1>
+    </div>
+
+    <div class="resource-area">
+      <div class="resource">財源 <strong>5,000</strong></div>
+    </div>
+  </header>
+
+  <div class="gacha-banner">
+    <div class="pickup-tag">LR PICK UP</div>
+
+    <div class="banner-nav">
+      <div class="city-display">
+        <img id="cityImage" class="pickup-image" src="assets/pickups/shibuya_pickup.PNG" alt="渋谷">
+      </div>
+
+      <button class="pickup-hit-area pickup-hit-left" onclick="prevCity()" aria-label="前のピックアップ"></button>
+      <button class="pickup-hit-area pickup-hit-right" onclick="nextCity()" aria-label="次のピックアップ"></button>
+    </div>
+  </div>
+
+  <div class="gacha-pity" id="gachaPity">
+    あと50回でSSR、あと100回でLR確定！
+  </div>
+
+  <div class="gacha-buttons">
+
+    <div class="gacha-button-wrap">
+      <button class="gacha-single" onclick="location.href='gacha_intro.html?count=1'">
+        1回招聘
+      </button>
+      <div class="gacha-price">1回300万円</div>
+    </div>
+
+    <div class="gacha-button-wrap">
+      <button class="gacha-ten" onclick="location.href='gacha_intro.html?count=10'">
+        10回招聘
+      </button>
+      <div class="gacha-price">1回2500万円</div>
+    </div>
+
+  </div>
+
+  <div class="back-area">
+    <button onclick="location.href='home.html'">
+      ホームへ戻る
+    </button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

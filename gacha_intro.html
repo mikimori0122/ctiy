@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招聘演出</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="introStage">
+
+    <img id="introImage" src="assets/cg/cg_fusou.png">
+
+    <div id="introTelop">
+        <div id="telopName">扶桑</div>
+        <div id="telopText"></div>
+    </div>
+
+    <div id="doorWhiteout"></div>
+
+    <button class="gacha-skip-button" onclick="skipIntro(event)">SKIP</button>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+startIntro();
+</script>
+
+</body>
+</html>

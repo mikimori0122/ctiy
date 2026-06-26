@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cities:War</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cw-home">
+
+  <div class="home-bg-layer"></div>
+
+  <header class="cw-home-header">
+    <div class="cw-header-left">
+      <img src="assets/ui/logo_header.png" class="header-logo" alt="Cities:War">
+    </div>
+
+    <div class="cw-header-right">
+      <div class="resource-line">
+        <span>財源 <strong>5,000万円</strong></span>
+        <span>スタミナ <strong>20/20</strong></span>
+        <span>市長Lv. <strong>1</strong></span>
+      </div>
+
+      <div class="player-line">
+        <span>拠点 <strong>岡山県備前市</strong></span>
+        <span>市長 <strong>つぶつぶの男爵・牧</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="cw-home-main">
+
+    <section class="husou-area">
+
+    <img src="assets/characters/husou1.png"
+         class="husou-home"
+         alt="扶桑">
+
+    <div class="husou-message">
+        甘いものが食べたいですね。
+    </div>
+
+</section>
+
+    <section class="notice-panel">
+      <h2>お知らせ</h2>
+      <p>・このゲームはまだ全然完成していません</p>
+      <p>・現在は開発中の仮データです</p>
+      <p>・ガチャ演出を調整中です</p>
+    </section>
+
+  </main>
+
+  <nav class="menu">
+    <button onclick="location.href='jinji.html'">
+      <span>👥</span>
+      人事
+      <small>編成・育成</small>
+    </button>
+
+    <button onclick="location.href='syouhei.html'">
+      <span>🤝</span>
+      招聘
+      <small>自治体を招聘</small>
+    </button>
+
+    <button class="active" onclick="location.href='gikai.html'">
+      <span>🏛️</span>
+      議会
+      <small>定例会・臨時会</small>
+    </button>
+
+    <button>
+      <span>🛒</span>
+      商店
+      <small>購入・交換</small>
+    </button>
+
+    <button>
+      <span>⚙️</span>
+      設定
+      <small>各種設定</small>
+    </button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

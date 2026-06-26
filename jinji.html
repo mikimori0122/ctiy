@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人事 - Cities:War</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="jinji-page">
+
+  <header class="jinji-header">
+    <button class="jinji-back" onclick="location.href='home.html'">ホーム</button>
+    <h1>人事</h1>
+    <div class="jinji-count" id="jinjiCount">協力自治体 0</div>
+  </header>
+
+  <main class="jinji-main">
+
+    <section class="jinji-view active" id="jinjiListView">
+      <div class="jinji-section-title">
+        <h2>協力自治体一覧</h2>
+      </div>
+      <div class="jinji-grid" id="jinjiRosterGrid"></div>
+    </section>
+
+    <section class="jinji-view" id="jinjiFormationView">
+      <div class="formation-detail" id="formationDetail"></div>
+
+      <div class="formation-pool">
+        <div class="jinji-section-title">
+          <h2>協力自治体から選択</h2>
+        </div>
+        <div class="formation-pool-grid" id="formationPoolGrid"></div>
+      </div>
+
+      <div class="formation-slots" id="formationSlots"></div>
+    </section>
+
+    <section class="jinji-view" id="jinjiFriendshipView">
+      <div class="jinji-section-title">
+        <h2>親善</h2>
+        <p>重複した自治体を親善に使い、友好ランクを上げます</p>
+      </div>
+      <div class="friendship-list" id="friendshipList"></div>
+    </section>
+
+    <section class="jinji-view" id="jinjiSpecialtyView">
+      <div class="specialty-layout" id="specialtyLayout"></div>
+    </section>
+
+  </main>
+
+  <nav class="jinji-tabs">
+    <button class="active" onclick="switchJinjiTab('list')">一覧</button>
+    <button onclick="switchJinjiTab('formation')">編成</button>
+    <button onclick="switchJinjiTab('friendship')">親善</button>
+    <button onclick="switchJinjiTab('specialty')">特産品</button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+  initJinji();
+</script>
+
+</body>
+</html>
