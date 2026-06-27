@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通常会 - Cities:War</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cw-mode-page">
+    <div class="home-bg-layer"></div>
+
+    <header class="mode-header">
+        <button class="mode-back" onclick="location.href='gikai.html'">戻る</button>
+        <div>
+            <h1>通常会</h1>
+            <p>クエストを選択してください</p>
+        </div>
+        <div class="quest-stamina">スタミナ <strong>20/20</strong></div>
+    </header>
+
+    <main class="quest-list">
+        <button class="quest-card" onclick="openQuestConfirm('tutorial')">
+            <span>チュートリアル</span>
+            <strong>9×9戦術カードバトル</strong>
+            <small>消費スタミナ 1</small>
+        </button>
+        <button class="quest-card" onclick="location.href='rhythm.html'">
+            <span>テスト</span>
+            <strong>リズムタップ検討用</strong>
+            <small>消費スタミナ 0</small>
+        </button>
+    </main>
+</div>
+
+<div class="cw-modal" id="questConfirmModal" aria-hidden="true">
+    <div class="cw-modal-panel">
+        <h2>クエスト開始</h2>
+        <p>スタミナ消費1：このクエストを開始しますか？</p>
+        <div class="cw-modal-actions">
+            <button onclick="closeQuestConfirm()">キャンセル</button>
+            <button class="primary" onclick="startTutorialQuest()">開始</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js?v=audio-buffer-bgm-4"></script>
+</body>
+</html>

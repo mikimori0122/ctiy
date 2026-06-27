@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>議会 - Cities:War</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cw-mode-page">
+    <div class="home-bg-layer"></div>
+
+    <header class="mode-header">
+        <button class="mode-back" onclick="location.href='home.html'">ホーム</button>
+        <div>
+            <h1>議会</h1>
+            <p>戦闘形式を選択してください</p>
+        </div>
+    </header>
+
+    <main class="mode-select-grid">
+        <button class="mode-select-card" onclick="location.href='normal_assembly.html'">
+            <span>通常会</span>
+            <strong>メインストーリー</strong>
+            <small>常設クエストを攻略します</small>
+        </button>
+
+        <button class="mode-select-card disabled" disabled>
+            <span>臨時会</span>
+            <strong>イベントストーリー</strong>
+            <small>今後実装予定</small>
+        </button>
+    </main>
+</div>
+
+<script src="script.js?v=audio-buffer-bgm-4"></script>
+</body>
+</html>

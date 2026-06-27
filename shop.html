@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商店 - Cities:War</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cw-mode-page shop-page">
+    <div class="home-bg-layer"></div>
+
+    <header class="mode-header">
+        <button class="mode-back" onclick="location.href='home.html'">ホーム</button>
+        <div>
+            <h1>商店</h1>
+            <p>戦闘用の消費アイテムを購入できます</p>
+        </div>
+        <div class="shop-wallet">財源 <strong data-financial-resource>5000万円</strong></div>
+    </header>
+
+    <main class="shop-layout">
+        <section class="shop-list" id="shopList"></section>
+
+        <aside class="shop-inventory">
+            <h2>所持アイテム</h2>
+            <div id="shopInventory"></div>
+        </aside>
+    </main>
+</div>
+
+<script src="script.js?v=audio-buffer-bgm-4"></script>
+<script>
+initShop();
+</script>
+</body>
+</html>

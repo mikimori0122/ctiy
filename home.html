@@ -38,10 +38,10 @@
 
   <main class="cw-home-main">
 
-    <section class="husou-area">
+    <section class="husou-area" onclick="changeHusouMessage()" role="button" aria-label="扶桑のセリフを変更">
       <img src="assets/characters/husou1.png" class="husou-home" alt="扶桑">
 
-      <div class="husou-message">
+      <div class="husou-message" id="husouMessage">
         甘いものが食べたいです。
       </div>
     </section>
@@ -74,13 +74,13 @@
       <small>定例会・臨時会</small>
     </button>
 
-    <button>
+    <button onclick="location.href='shop.html'">
       <span>商</span>
       商店
       <small>購入・交換</small>
     </button>
 
-    <button>
+    <button onclick="toggleAudioPanel()">
       <span>設</span>
       設定
       <small>各種設定</small>
@@ -89,6 +89,6 @@
 
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=audio-buffer-bgm-4"></script>
 </body>
 </html>

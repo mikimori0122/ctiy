@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リズムタップ検討用 - Cities:War</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cw-mode-page rhythm-page">
+    <div class="home-bg-layer"></div>
+
+    <header class="mode-header">
+        <button class="mode-back" onclick="location.href='normal_assembly.html'">戻る</button>
+        <div>
+            <h1>リズムタップ検討用</h1>
+            <p>戦闘システム検討用の簡易テストです</p>
+        </div>
+        <div class="quest-stamina">入力 <strong>タップ / Space</strong></div>
+    </header>
+
+    <main class="rhythm-layout">
+        <section class="rhythm-stage">
+            <div class="rhythm-topline">
+                <div>
+                    <span>Score</span>
+                    <strong id="rhythmScore">0</strong>
+                </div>
+                <div>
+                    <span>Combo</span>
+                    <strong id="rhythmCombo">0</strong>
+                </div>
+                <div>
+                    <span>Judge</span>
+                    <strong id="rhythmJudge">Ready</strong>
+                </div>
+            </div>
+
+            <div class="rhythm-board" id="rhythmBoard">
+                <div class="rhythm-lane" data-lane="0"><span>1</span></div>
+                <div class="rhythm-lane" data-lane="1"><span>2</span></div>
+                <div class="rhythm-lane" data-lane="2"><span>3</span></div>
+                <div class="rhythm-lane" data-lane="3"><span>4</span></div>
+                <div class="rhythm-hit-line"></div>
+            </div>
+
+            <div class="rhythm-controls">
+                <button onclick="startRhythmGame()">開始</button>
+                <button onclick="stopRhythmGame()">停止</button>
+            </div>
+        </section>
+
+        <aside class="rhythm-side">
+            <h2>検討ポイント</h2>
+            <p>敵の行動順に合わせてノーツが流れ、成功すると攻撃・スキルの威力が上がる想定です。</p>
+            <p>スマホでは下の4つのボタン、PCでは 1 / 2 / 3 / 4 または Space で判定できます。</p>
+            <div class="rhythm-pad">
+                <button onclick="tapRhythmLane(0)">1</button>
+                <button onclick="tapRhythmLane(1)">2</button>
+                <button onclick="tapRhythmLane(2)">3</button>
+                <button onclick="tapRhythmLane(3)">4</button>
+            </div>
+        </aside>
+    </main>
+</div>
+
+<script src="script.js?v=audio-buffer-bgm-4"></script>
+<script>
+    initRhythmGame();
+</script>
+</body>
+</html>
